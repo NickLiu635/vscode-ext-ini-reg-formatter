@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+; Test registry entries with various data types
+
+[HKEY_CURRENT_USER\Software\TestApp\Settings]
+"StringValue" = "Hello World"
+"EmptyString" = ""
+"DwordValue" = dword:00000001
+"QwordValue" = hex(b):01,23,45,67,89,ab,cd,ef
+"BinaryValue" = hex:01,02,03,04,05
+"MultiString" = hex(7):48,00,65,00,6c,00,6c,00,6f,00,00,00,57,00,6f,00,72,00,6c,00,64,00,00,00,00,00
+"ExpandString" = hex(2):25,00,55,00,53,00,45,00,52,00,50,00,52,00,4f,00,46,00,49,00,4c,00,45,00,25,00,00,00
+
+[HKEY_CURRENT_USER\Software\TestApp\MoreSettings]
+"AnotherString" = "Test Value"
+"ZeroDword" = dword:00000000
+"MaxDword" = dword:ffffffff
