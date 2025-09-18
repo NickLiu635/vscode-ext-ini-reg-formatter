@@ -3,6 +3,8 @@
   "displayName": "INI/REG Formatter",
   "description": "A VSCode extension to format INI and Windows Registry (.reg) files by trimming whitespace, removing extra blank lines, and sorting fields.",
   "license": "WTFPL",
+  "repository": "https://github.com/NickLiu635/vscode-ext-ini-reg-formatter",
+  "author": "NickLiu635",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.74.0"

@@ -11,6 +11,7 @@ A VSCode extension that formats INI and Windows Registry (.reg) files by:
 - Manual formatting via command palette
 - Supports .ini, .cfg, .conf, and .reg file extensions
 - Handles both INI format (key=value) and Registry format ("name"="value")
+- Smart comment handling: single-line comments follow the next non-comment line, standalone comments remain at section start
 
 ## Usage
 
@@ -33,13 +34,17 @@ Test cases are available in the `tests/` folder. The folder contains various INI
 
 - `example.ini` & `example.reg` - Basic test cases
 - `complex.ini` & `complex.reg` - More complex formatting scenarios
-- `comments-only.ini` & `minimal.reg` - Edge cases with comments and empty sections
+- `comments-follow.ini` & `comments-follow.reg` - Demonstrate comment following behavior
+- `standalone-comments.ini` & `standalone-comments.reg` - Demonstrate standalone comments that remain at section start
 
 To test:
 1. Open any test file in VSCode
 2. Run "Format Document" command
-3. Verify formatting results
-
-## Contributing
+3. Verify formatting results:
+   - Leading/trailing whitespace is removed
+   - Extra blank lines are removed
+   - Keys/values are sorted alphabetically within each section
+   - Comments are preserved and follow their associated lines
+   - File structure remains valid
 
 Contributions are welcome! Please feel free to submit a Pull Request.

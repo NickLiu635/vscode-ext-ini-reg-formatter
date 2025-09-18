@@ -1,0 +1,18 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\TestApp]
+; Section comment
+; This should stay with the section
+
+; This comment should follow the next value
+"StringValue" = "Hello World"
+
+; First comment for DWORD
+; Second comment for DWORD
+; All these comments should follow the DWORD value
+"DwordValue" = dword:00000001
+
+"AnotherValue" = "Test"
+
+; Final comment for the last value
+"LastValue" = "End"

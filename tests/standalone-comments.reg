@@ -1,0 +1,27 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\TestApp]
+; Standalone comment at section start
+; This should remain at the top of the section
+
+; Comment that should follow the next value
+"StringValue" = "Hello World"
+
+"DwordValue" = dword:00000001
+
+; Comment for the username value
+"Username" = "admin"
+
+"Password" = "secret123"
+
+[HKEY_CURRENT_USER\Software\AnotherApp]
+; Another standalone comment
+; Should stay at section beginning
+
+; Comment for this value
+"Setting1" = "value1"
+
+"Setting2" = "value2"
+
+; Final standalone comment
+; No field follows this
